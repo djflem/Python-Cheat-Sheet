@@ -16,17 +16,17 @@ Simple as that! Another example: The largest number you can store in 5 digits of
 Bitwise '&' and '|' Operators (AND/OR)
 
 0101 = 5
-AND
+'&'
 0111 = 7
 =
 0101 = 5
 
-"&" operator requires both to be 1's to be True, so the 01(1)1 is ignored.
+'&' operator requires both to be 1's to be True, so the 01(1)1 is ignored.
 
 0101 = 5
-OR
+'|'
 0111 = 7
 =
 0111 = 7
 
-"|" operator only requires one of them to be 1's to be True, so the 01(1)1 is not ignored.
+'|' operator only requires one of them to be 1's to be True, so the 01(1)1 is not ignored.
