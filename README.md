@@ -29,4 +29,8 @@ Bitwise '&' and '|' Operators (AND/OR)
 =
 0111 = 7
 
+<<<<<<< HEAD
 '|' operator only requires one of them to be 1's to be True, so the 01(1)1 is not ignored.
+=======
+'|' operator only requires one of them to be 1's to be True, so the 01(1)1 is not ignored.
+>>>>>>> 6ccaba7603bc707a73b6f9512d82dc1b8bf48b17
