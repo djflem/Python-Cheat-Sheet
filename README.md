@@ -1,6 +1,6 @@
 # Python-Cheat-Sheet
 
-Binary
+# Binary
  
 Each 1 in a binary number represents an ever-greater multiple of 2. In a 4-digit number, that means you have the eights place, the fours place, the twos place, and the ones place. Similar to how in decimal you would have the thousands place, the hundreds place, the tens place, and the ones place.
 
@@ -13,7 +13,7 @@ Each 1 in a binary number represents an ever-greater multiple of 2. In a 4-digit
 Simple as that! Another example: The largest number you can store in 5 digits of binary is 31.
 
 
-Bitwise '&' and '|' Operators (AND/OR)
+# Bitwise '&' and '|' Operators (AND/OR)
 
 0101 = 5
 '&'
