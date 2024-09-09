@@ -17,7 +17,7 @@ print(none_type_variable is None)  # default value to be replaced later
 print(round(my_var))  # avg
 print(16e3)  # 16000.0
 print(7.1e-2)  # 0.071
-
+print(f"raise 25 to the power of 0.5 (aka square root of 25) equals {25**0.5}")  # square root
 
 # FUNCTIONS-------------------------------------------------
 
@@ -49,6 +49,23 @@ def combat_evaluation(player_power, enemy_defense):
         disadvantage = True
 
     return advantage, disadvantage, evenly_matched
+
+
+def is_prime(number):
+    if number <= 1:
+        return False
+
+    if number == 2:
+        return True
+
+    if number % 2 == 0:
+        return False
+
+    for i in range(3, int(number**0.5) + 1, 2):
+        if number % i == 0:
+            return False
+
+    return True
 
 
 # LOOPS-------------------------------------------------
