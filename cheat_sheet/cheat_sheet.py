@@ -103,6 +103,20 @@ def exp_per_lvl(level):
     exp = level * 5
     return exp
 
+def meditate(mana, max_mana, energy, energy_potions):
+    while mana < max_mana and energy > 0:  # normal operations
+        energy -= 1
+        mana += 3
+    while mana < max_mana and energy_potions > 0:  # user pots only if mana is still not full
+        energy_potions -= 1
+        energy += 50
+        while mana < max_mana and energy > 0:  # redo operations with restored energy
+            energy -= 1
+            mana += 3
+            if mana > max_mana:  # prevent mana over max
+                mana = max_mana
+                break
+    return mana, energy, energy_potions
 
 # MAIN-------------------------------------------------
 
