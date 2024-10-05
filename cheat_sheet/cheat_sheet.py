@@ -8,6 +8,7 @@ sword_name, sword_damage, sword_length = "Slayer", 15, 8
 number_flooring = 7 // 3
 number_exponent = 3 ** 2
 another_number = 16_000_000  # underscore for readability
+gpu_names = []  # list
 
 # PRINTING-------------------------------------------------
 
@@ -103,6 +104,7 @@ def exp_per_lvl(level):
     exp = level * 5
     return exp
 
+
 def meditate(mana, max_mana, energy, energy_potions):
     while mana < max_mana and energy > 0:  # normal operations
         energy -= 1
@@ -117,6 +119,36 @@ def meditate(mana, max_mana, energy, energy_potions):
                 mana = max_mana
                 break
     return mana, energy, energy_potions
+
+
+# LISTS-------------------------------------------------
+
+
+gpu_names.append("4060 Super")
+
+
+def generate_user_list(num_of_users):  # call player method passing in value for num_of_users
+    player = []
+    for i in range(num_of_users):
+        player.append(input("Enter a username: "))
+    return player
+
+
+def get_item_counts(items):
+    potion_count = 0
+    bread_count = 0
+    shortsword_count = 0
+
+    for i in range(0, len(items)):
+        if items[i] == "Potion":
+            potion_count += 1
+        if items[i] == "Bread":
+            bread_count += 1
+        if items[i] == "Shortsword":
+            shortsword_count += 1
+
+    return potion_count, bread_count, shortsword_count
+
 
 # MAIN-------------------------------------------------
 
